@@ -6,10 +6,6 @@ import TodosList from './TodosList';
 class App extends Component {
   state = { todos: [] };
 
-  componentDidMount() {
-    console.log('APP Mount!');
-  }
-
   saveTodo = (todo) => {
     this.setState((prev) => ({
       todos: [...prev.todos, todo],
